@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:500,700");
+
+body {
+    line-height: 26px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+   
+   }
+            h1{
+                font-family: 'Roboto';
+            }
+            li
+            {
+                font-family: 'Roboto';
+            }
+            .nav-link
+            {
+            font-size: 25px;
+            font-family:verdana;
+            font-weight: bold;
+            }
+            .navbar-brand
+            {
+                font-size:35px;
+                font-weight: bold;
+            }
+            img#prof
+            {
+                image-rendering: crisp-edges;
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+            .fa{
+                border: 2px solid black;
+                border-radius:100%;
+                padding: 15px;
+            }
+            .fa-facebook{
+                font-size: 300%;
+                border:3px solid black;
+                height:70%;
+                text-decoration: none;
+                color:tomato;
+                width: 100px;
+                      }
+            .fa-facebook:hover{
+                border:3px dotted black;
+                transition:border 2s;
+            }
