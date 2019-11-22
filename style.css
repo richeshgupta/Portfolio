@@ -33,19 +33,11 @@ body {
                 scroll-behavior: smooth;
             }
             .fa{
-                border: 2px solid black;
-                border-radius:100%;
-                padding: 15px;
-            }
-            .fa-facebook{
-                font-size: 300%;
-                border:3px solid black;
+                /* padding: 15px; */
+                font-size: 180%;
                 height:70%;
                 text-decoration: none;
-                color:tomato;
+
                 width: 100px;
-                      }
-            .fa-facebook:hover{
-                border:3px dotted black;
-                transition:border 2s;
             }
+            
