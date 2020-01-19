@@ -13,13 +13,97 @@
         <!-- end of bootstrap cdn -->
         
         <link rel="stylesheet" href="style.css" />
-        
+        <style>
+            @keyframes animation {
+                0% 
+                {
+                     background: linear-gradient(to right, #ffffff, #ffffff,#fff,#fff,#fff,#fff);
+
+                }
+                25%{
+                    background: linear-gradient(to right, #74ab95, #74ab95, #fff,#fff,#fff,#fff);
+
+                }
+                50%
+                {
+                    background: linear-gradient(to right, #74ab95, #74ab95,#74ab95, #fff,#fff,#fff);
+                }
+                75%{
+                    background: linear-gradient(to right, #74ab95, #74ab95,#74ab95,#74ab95, #fff,#fff);
+                }
+                100%
+                {
+                    background: linear-gradient(to right, #74ab95, #74ab95,#74ab95,#74ab95,#74ab95,#74ab95);
+
+                }
+            }
+            @keyframes image-animation {
+                from{background-color:#cac8e3;}
+                to{background-color:#cac8e3;}
+            }
+            #loader
+            {
+                height: 100%;
+                width:100%;
+                position: relative;
+                overflow: hidden;
+                justify-content: center;
+                /* animation-name:animation;
+                animation-duration: 2s;
+                animation-iteration-count:initial; */
+                background-color:#bdbbba;
+                /* border-radius: 15%; */
+            }
+            #loader-img
+            {
+                margin-top: 13%;
+                margin-left: 35%;
+                border-radius: 10%;
+                animation-name: image-animation;
+                animation-duration: 2s;
+                animation-iteration-count:initial;
+            }
+            .loader_screen
+            {
+                position: fixed;                                          
+                z-index:555;
+                width:100%;
+                height:100%;
+            }
+            .time-load
+            {
+                width:300px;
+                height:50px;
+                border:4px solid white;
+                /* border-radius:6%; */
+                margin-left:44%;
+                margin-top:3%;
+                animation-name:animation;
+                animation-duration: 2s;
+                animation-iteration-count: initial;
+                text-align: center;
+                font-weight: bold;
+
+            }
+        </style>
     </head>
     <body>
+       
+        <div class="loader_screen">
+            <div id="loader">
+                <div class="image">
+                    <img src="richesh3.png" alt="Richesh Gupta" id="loader-img" />
+                </div>
+                <div class="time-load">
+                    Loading...
+                </div>
+            </div>
+        </div>
+        
          <nav class='navbar navbar-expand-lg navbar-dark bg-dark sticky-top'>
             <a class='navbar-brand' href='#'>Richesh Gupta</a>
             <button class='navbar-toggler' data-toggle='collapse' data-target='#collapse_target' aria-controls='navbarSupportedContent'>
-                <span class='navbar-toggler-icon'></span>
+            <span class='navbar-toggler-icon'></span>
             </button>
         <div class='collapse navbar-collapse' id='collapse_target'>
             <div class="d-flex border-left border-left-5 pl-5">
@@ -308,6 +392,12 @@
     </div>
     </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+          $('.loader_screen').fadeToggle();
+        }, 2100);
+      </script>
     </body>
 
 </html>
